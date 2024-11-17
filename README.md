@@ -1,4 +1,4 @@
-# Postgres S3 backups
+# Postgres Minio backups
 
 A simple Docker application to backup your PostgreSQL database to Minio via a cron.
 
