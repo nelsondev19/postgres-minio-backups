@@ -1,0 +1,19 @@
+services:
+  postgres-s3-backups:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        MINIO_ENDPOINT: "${MINIO_ENDPOINT}"
+        ACCESS_KEY: "${ACCESS_KEY}"
+        SECRET_KEY: "${SECRET_KEY}"
+        MINIO_BUCKET: "${MINIO_BUCKET}"
+        DATABASE_URL: "${DATABASE_URL}"
+        CRON_SCHEDULE: "${CRON_SCHEDULE}"
+    environment:
+      CRON_SCHEDULE: "${CRON_SCHEDULE}"
+      MINIO_ENDPOINT: "${MINIO_ENDPOINT}"
+      ACCESS_KEY: "${ACCESS_KEY}"
+      SECRET_KEY: "${SECRET_KEY}"
+      MINIO_BUCKET: "${MINIO_BUCKET}"
+      DATABASE_URL: "${DATABASE_URL}"
