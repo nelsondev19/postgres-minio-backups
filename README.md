@@ -14,6 +14,6 @@ A simple Docker application to backup your PostgreSQL database to Minio via a cr
 
 - `MINIO_BUCKET` - AWS access key ID.
 
-- `BACKUP_DATABASE_URL` - The connection string of the database to backup.
+- `BACKUP_DATABASE_URL` - The connection string of the database to backup. Example: `"postgresql://username:password@host:port/database"`
 
 - `CRON_SCHEDULE` - The cron schedule to run the backup on. Example: `* * * * *`
