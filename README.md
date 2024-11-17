@@ -1,29 +1,19 @@
+# Postgres S3 backups
 
+A simple Docker application to backup your PostgreSQL database to Minio via a cron.
 
-Basic Usage
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/example)
 
-```bash
-docker compose up
-```
+## Configuration
 
-Backup Process
-The container will:
+- `MINIO_ENDPOINT` - Minio endpoint. Example: `http://minio:9000`.
 
-1. Connect to MinIO using provided credentials
+- `ACCESS_KEY` - Minio access key.
 
-2. Create a PostgreSQL backup with timestamp
+- `SECRET_KEY` - Minio secret key.
 
-3. Upload the backup to the specified MinIO bucket
+- `MINIO_BUCKET` - AWS access key ID.
 
-4. Remove the local backup file
+- `BACKUP_DATABASE_URL` - The connection string of the database to backup.
 
-5. Exit with appropriate status code (0 for success, 1 for failure)
-
-Error Handling
-The container will exit with status code 1 if any of these operations fail:
-
-1. MinIO connection
-
-2. Database backup creation
-
-3. Upload to MinIO
+- `CRON_SCHEDULE` - The cron schedule to run the backup on. Example: `* * * * *`
