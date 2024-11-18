@@ -8,7 +8,7 @@ ENV ACCESS_KEY=""
 ENV SECRET_KEY=""
 ENV MINIO_BUCKET=""
 ENV DATABASE_URL=""
-ENV CRON_SCHEDULE=""
+ENV CRON_SCHEDULE="0 5 * * *"
 
 RUN apk add --no-cache postgresql-client minio-client
 
