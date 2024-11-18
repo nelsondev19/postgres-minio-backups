@@ -1,8 +1,12 @@
 # Postgres Minio backups
 
-A simple Docker application to backup your PostgreSQL database to Minio via a cron.
+A Docker to backup your PostgreSQL database to Minio via a cron.
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/template/girFDE?referralCode=ve12LK)
+## Overview
+
+The template use Docker and Bash Scripting to dump your PostgreSQL data to a file and then upload the file to Minio.
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/template/7VQo0T)
 
 ## Configuration
 
@@ -16,4 +20,4 @@ A simple Docker application to backup your PostgreSQL database to Minio via a cr
 
 - `BACKUP_DATABASE_URL` - The connection string of the database to backup. Example: `"postgresql://username:password@host:port/database"`
 
-- `CRON_SCHEDULE` - The cron schedule to run the backup on. Example: `* * * * *`
+- `CRON_SCHEDULE` - The cron schedule to run the backup on. Example: `0 5 * * *` the cron runs at 5 AM every day
