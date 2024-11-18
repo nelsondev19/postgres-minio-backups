@@ -1,6 +1,8 @@
 services:
-  postgres-s3-backups:
-    image: nelsonmendezz/postgres-s3-backups:latest
+  postgres-minio-backups:
+    build:
+      context: ./
+      dockerfile: Dockerfile
     environment:
       CRON_SCHEDULE: "${CRON_SCHEDULE}"
       MINIO_ENDPOINT: "${MINIO_ENDPOINT}"
