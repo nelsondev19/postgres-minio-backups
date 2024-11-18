@@ -12,7 +12,7 @@ A simple Docker application to backup your PostgreSQL database to Minio via a cr
 
 - `SECRET_KEY` - Minio secret key.
 
-- `MINIO_BUCKET` - Minio access key ID.
+- `MINIO_BUCKET` - Minio bucket. Example `my-bucket`.
 
 - `BACKUP_DATABASE_URL` - The connection string of the database to backup. Example: `"postgresql://username:password@host:port/database"`
 
