@@ -2,7 +2,7 @@
 
 A simple Docker application to backup your PostgreSQL database to Minio via a cron.
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/example)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/template/girFDE?referralCode=ve12LK)
 
 ## Configuration
 
