@@ -6,7 +6,7 @@ A Docker to backup your PostgreSQL database to Minio via a cron.
 
 The template use Docker and Bash Scripting to dump your PostgreSQL data to a file and then upload the file to Minio.
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/template/7VQo0T)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/7VQo0T)
 
 ## Configuration
 
