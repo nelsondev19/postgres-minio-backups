@@ -22,7 +22,7 @@ The template use Docker and Bash Scripting to dump your PostgreSQL data to a fil
 
 - `CRON_SCHEDULE` - The cron schedule to run the backup on. Example: `0 5 * * *` the cron runs at 5 AM every day
 
-## Configuration
+## Restore data
 
 Restore your data to the target database with pg_restore
 
