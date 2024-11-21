@@ -21,3 +21,11 @@ The template use Docker and Bash Scripting to dump your PostgreSQL data to a fil
 - `BACKUP_DATABASE_URL` - The connection string of the database to backup. Example: `"postgresql://username:password@host:port/database"`
 
 - `CRON_SCHEDULE` - The cron schedule to run the backup on. Example: `0 5 * * *` the cron runs at 5 AM every day
+
+## Configuration
+
+Restore your data to the target database with pg_restore
+
+```bash
+pg_restore -v -d <postgres_connection_string> <filename>.bak
+```
