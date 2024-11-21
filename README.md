@@ -27,5 +27,5 @@ The template use Docker and Bash Scripting to dump your PostgreSQL data to a fil
 Restore your data to the target database with pg_restore
 
 ```bash
-pg_restore -v -d <postgres_connection_string> <filename>.bak
+pg_restore -v -d postgres_connection_string filename.bak
 ```
